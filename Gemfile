@@ -1,9 +1,15 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 # asset pipeline
 gem 'uglifier'
 gem 'coffee-script', '~> 2.4.1'
 gem 'sass', '~> 3.5.1'
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 5.0'
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
 
 # access control
 gem 'pundit', '~> 1.1.0'
@@ -26,7 +32,7 @@ group :development, :test do
   gem 'factory_bot_rails', '< 5.0'
   gem 'zonebie'
   gem 'timecop'
-  gem 'faker', '1.7.3'
+  gem 'faker'
   gem 'database_cleaner'
 end
 
