@@ -36,7 +36,7 @@ module Hourglass
       add_custom_fields_filters issue_custom_fields, :issue
       add_custom_fields_filters TimeEntryCustomField, :time_entry
       # we need fix the last added filters cause redmine fucks up the name
-      Rails.logger.info("======= available_filters = #{available_filters.inspect} ======")
+      # Rails.logger.info("======= available_filters = #{available_filters.inspect} ======")
       # available_filters.select { |k, _| k.start_with? 'time_entry' }.each do |k, v|
       #   Rails.logger.info("========== k = #{k.inspect} v = #{v.inspect} ===========")
       #   Rails.logger.info("========== label_for(k) = #{label_for(k)}  ===========")
